@@ -1,0 +1,2 @@
+# Crie um programa que leia 2 notas de um aluno, calcule sua média e mostre uma mensagem no fim dizendo
+# se ele foi aprovado (media maior que 7), recuperação( entre 5.0 e 6.9) ou reprovado (menor que 5.0)
