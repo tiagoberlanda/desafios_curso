@@ -2,8 +2,7 @@
 # se ele ainda vai se alistar no exercito, se é hora de se alistar ou se passou o tempo de alistamento.
 from datetime import date
 ano_nascimento = int(input('Digite o ano do seu nascimento: '))
-ano_atual = date.today()
-ano_atual = ano_atual.year
+ano_atual = date.today().year
 idade = ano_atual - ano_nascimento
 if idade == 18:
     print('Você tem 18 anos e deve se alistar IMEDIATAMENTE!')
