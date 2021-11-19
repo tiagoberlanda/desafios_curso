@@ -9,6 +9,8 @@ data_atual = date.today().year # definindo o ano atual
 nascimento = int(input('Digite em que ano você nasceu: '))
 ano = data_atual - nascimento
 
+print('O atleta tem {} anos'.format(data_atual - nascimento ))
+
 if ano < 9:
     print('Categoria Mirim!')
 elif ano > 9 and ano <= 14:
