@@ -12,18 +12,16 @@ r3 = float(input('Terceiro Segmento: '))
 if r1 < r2 + r3 and r2 < r1 + r3 and r3 < r1 + r2:
     print('Os Segmentos acima {}PODEM{} formar um triângulo!'.format
     (cor['verde'], cor['limpa']))
+    if r1 == r2 and r1 == r3:
+        tipo = 'Equilátero'
+
+    elif r1 != r2 and r1 != r3:
+        tipo = 'Escaleno'
+
+    elif r1 == r2 and r1 != r3 or r2 != r3 and r2 != r1:
+        tipo = 'Isóceles'
+
+    print('Esse triângulo é do tipo {}{}{}'.format(cor['verde'],tipo,cor['limpa']))
 else:
     print('Os Segmentos acima {}NÃO PODEM{} formar um triângulo!'.format
     (cor['vermelho'], cor['limpa']))
-    exit()
-    
-if r1 == r2 and r1 == r3:
-    tipo = 'Equilátero'
-
-elif r1 != r2 and r1 != r3:
-    tipo = 'Escaleno'
-
-elif r1 == r2 and r1 != r3 or r2 != r3 and r2 != r1:
-    tipo = 'Isóceles'
-
-print('Esse triângulo é do tipo {}{}{}'.format(cor['verde'],tipo,cor['limpa']))
