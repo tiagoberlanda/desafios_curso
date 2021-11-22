@@ -1,13 +1,16 @@
 # Crie um programa que leia o prum número inteiro e diga se ele é ou não é primo.
 n = int(input("Verificar numeros primos ate: "))
-mult=0
+tot = 0 
 
-for count in range(2,n):
-    if (n % count == 0):
-        print("Múltiplo de",count)
-        mult += 1
-
-if(mult==0):
-    print("É primo")
+for c in range (1, n + 1):
+    if n % c ==0:
+        print('\033[33m', end=" ")
+        tot += 1
+    else:
+        print('\033[31m',end=" ")
+    print('{}'.format(c), end="")
+print('\n\033[mO número {} foi divisível {} vezes.'.format(n,tot))
+if tot ==2:
+    print('OU seja ele É PRIMO!')
 else:
-    print("Tem",mult," múltiplos acima de 2 e abaixo de",n)
+    print('Ou seja o Número NÃO É PRIMO!')
