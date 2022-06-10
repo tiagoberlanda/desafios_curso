@@ -23,6 +23,6 @@ while condicao == 0:
         condicao = 1
     
     else:
-        print('Errou, o computador ganhou!')
+        print('Errou, o computador ganhou!\nTente Novamente!')
         contagem += 1
 print('Fim')
